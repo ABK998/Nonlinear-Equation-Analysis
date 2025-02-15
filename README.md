@@ -1,4 +1,4 @@
-# Non-Linear Equation Solver and Stability Analysis
+# Non-Linear Equation Solver, Senstivity, Stability and Variance Analysis.
 
 ## Overview
 This Python project solves a **non-linear equation** and analyzes the stability of its roots. Additionally, it performs **sensitivity analysis** to understand how different parameters affect the function.
