@@ -1,4 +1,4 @@
-# Non-Linear Equation Solver, Senstivity, Stability and Variance Analysis.
+# Non-Linear Equation Solver, Sensitivity, Stability, and Variance Analysis
 
 ## Overview
 This Python project solves a **non-linear equation** and analyzes the stability of its roots. Additionally, it performs **sensitivity analysis** to understand how different parameters affect the function.
@@ -6,7 +6,7 @@ This Python project solves a **non-linear equation** and analyzes the stability 
 ## Features
 - **Solves a non-linear equation** for given parameters.
 - **Performs stability analysis** using the derivative of the function.
-- **Plots the function f(Φ)** and highlights equilibrium points.
+- **Plots the function f(X)** and highlights equilibrium points.
 - **Conducts sensitivity analysis** to determine the impact of parameters on function behavior.
 
 ## Requirements
@@ -24,42 +24,42 @@ python script.py
 ```
 
 The program will prompt you to enter values for the parameters:
-- **κ (kappa)**
-- **m**
-- **ρ (rho)**
-- **σ (sigma)**
-- **C**
+- **a, b, c, d, e, f, g, h, i**
 
 After entering the values, it will:
 1. Display the constructed equation.
-2. Solve for equilibrium points (roots of f(Φ)).
+2. Solve for equilibrium points (roots of f(X)).
 3. Analyze the stability of the roots using the function's derivative.
 4. Plot the function along with equilibrium points.
 5. Perform sensitivity analysis and generate a bar graph.
 
-## Output
-The script generates:
-- A **graph of f(Φ)** with equilibrium points marked.
-- A **bar chart for sensitivity analysis**.
-- Printed **roots and their stability** in the console.
+## Equation
+The script solves the following equation:
 
-![Equation Analysis](Analysis_Graph.png)
+$$
+f(X) = \frac{b + cX}{aX^4} + \frac{e + fX}{dX^3} + gX^2 + hX + i
+$$
 
-## Example Equation
+## Example
 If the parameters are:
 
-$$\kappa = 1.2, m = 0.8, \rho = 0.5, \sigma = 0.3, C = 2.0$$
+$$
+a = 1.2, \quad b = 0.8, \quad c = 0.5, \quad d = 1.0, \quad e = 0.3, \quad f = 2.0, \quad g = 1.5, \quad h = -0.5, \quad i = 3.0
+$$
 
 Then the equation solved is:
 
 $$
-\frac{\kappa^2}{2 (m^2 + \rho \kappa)} \Phi^3 +
-\frac{3 \sigma \kappa}{2 (m^2 + \rho \kappa)} \Phi^2 +
-\frac{\sigma^2}{2 (m^2 + \rho \kappa)} \Phi +
-\frac{C \kappa}{2 (m^2 + \rho \kappa)} = 0
+f(X) = \frac{0.8 + 0.5X}{1.2X^4} + \frac{0.3 + 2.0X}{1.0X^3} + 1.5X^2 - 0.5X + 3.0
 $$
 
-The script will solve for Φ and determine stability.
+## Output
+The script generates:
+- A **graph of f(X)** with equilibrium points marked.
+- A **bar chart for sensitivity analysis**.
+- Printed **roots and their stability** in the console.
+
+![Equation Analysis](Analysis_Graph.png)
 
 ## Contribution
 Feel free to contribute by opening an issue or submitting a pull request!
